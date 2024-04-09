@@ -1,1 +1,23 @@
-/* Пиши стили тут */
+.all-stars {
+    display: flex;
+}
+
+.all-stars:hover .star {
+    background-image: url("img/star.svg");
+}
+
+.star {
+    background: url(img/star-empty.svg) no-repeat;
+    flex-basis: auto;
+    height: 200px;
+    width: 200px;
+    margin-right: 0;
+}
+
+.star:hover {
+    background: url(img/star.svg) no-repeat;
+}
+
+.star:hover ~ .star {
+    background-image: url("img/star-empty.svg");
+}
